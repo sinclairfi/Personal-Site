@@ -1,0 +1,169 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* my actual code */
+
+body {
+background: #f5f4ef;
+background-image: -webkit-linear-gradient(#f38783, #F5F4EF);
+background-repeat: no-repeat;
+margin-right: 5%;
+margin-left: 5%;
+}
+
+header,footer{background-color: #535195;}
+
+
+header,main,nav,footer,img{border-radius: 8px;}
+footer{border: 2px solid #535195;}
+
+header,footer, main{margin: 5%;}
+
+#top{border-top: 2px solid lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+		justify-content: space-around;}
+#bottom{display: flex;
+flex-wrap: wrap;
+list-style-type: none;
+justify-content: space-around;}
+
+
+h1,h2,h3,h4,h5,li{font-family: "book antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+line-height: 130%;
+letter-spacing: .05em;}
+
+h1,li{color: #f38783;}
+
+h1{margin-left: 5%;
+	font-size: 300%;}
+
+strong{color: #535195; background-color:  lightgrey;}
+
+a{color: #f38783;
+  text-decoration: none;}
+
+li{text-align: center;}
+
+h4,li{font-size: 145%;}
+h5{font-size: 120%;}
+
+h4,h5{color: #535195;}
+
+p,td{padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+	font-kerning: normal;
+	padding-top: 1%;
+	font-size: 17px;
+font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+
+
+h4{padding-top: 2%;}
+
+p,h4,h5{margin-left: 15%;
+          margin-right: 15%;
+					line-height: 130%;}
+
+main{border: solid 3px #535195;
+		background-color: lightgrey;}
+
+
+table{
+	width: 50%;}
+
+	#tabless{display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;}
+
+
+
+sub{vertical-align: -20%;
+		font-size: 10px;}
+
+#center{text-align: center;}
+img{	width: 30%;
+	height: auto;
+			float: right;
+			margin: 5%;
+		border: solid 3px #535195;}
+
+
+@media screen and (max-width: 960px){
+	li,p{	text-align: left;}
+	#top,#bottom{display: block;}
+		#onpage,li{border: 1px solid lightgrey;
+		    display: flex;
+		    flex-wrap: wrap;
+				justify-content: left;}
+	p,h4,h5{margin-left: 5%;
+					margin-right: 5%;}
+	a,#onpage{margin-left: 5%;}
+#bot{border: none;}
+img{display:none;}
+table{width: 100%;}}
+
+
+
+@media screen and (max-width: 760px){
+	li,p{text-align: left;}
+	#top,#bottom{display: block;}
+		#onpage,li{border: 1px solid lightgrey;
+		    display: flex;
+		    flex-wrap: wrap;
+				justify-content: left;}
+p,h4,h5{margin-left: 5%;
+					margin-right: 5%;}
+					a,#onpage{margin-left: 5%;}
+				#bot{border: none;}
+img{display:none;}
+table{width: 100%;}
+			}
